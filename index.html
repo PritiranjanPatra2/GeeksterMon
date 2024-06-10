@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>GeeksterMon</h1>
+      <div class="find-container">
+        <img src="pokemon-removebg-preview.png" alt="" />
+        <div id="first">
+          <select name="type" id="type">
+            <option value="">Types</option>
+            <option value="grass">Grass</option>
+            <option value="fire">Fire</option>
+            <option value="water">Water</option>
+            <option value="bug">Bug</option>
+            <option value="normal">Normal</option>
+            <option value="poison">Poison</option>
+            <option value="electric" id="electric">Electric</option>
+            <option value="ground">Ground</option>
+            <option value="fairy">Fairy</option>
+            <option value="fighting">Fighting</option>
+            <option value="psychic">Psychic</option>
+            <option value="rock">Rock</option>
+            <option value="ghost">Ghost</option>
+            <option value="dragon">Dragon</option>
+            <option value="ice">Ice</option>
+          </select>
+
+          <button id="filter">Filter</button>
+        </div>
+        <div id="second">
+          <input type="text" placeholder="Search By Pokemon Name" id="search" />
+          <button id="reset"><i class="fa-solid fa-arrows-rotate"></i></button>
+        </div>
+      </div>
+      <div id="card-container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
